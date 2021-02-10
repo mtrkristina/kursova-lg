@@ -1,0 +1,29 @@
+@import "_general.scss";
+nav{
+    @include box-shadow;
+    position: sticky;
+    .navbar-brand{
+        font-weight: $bold;
+        font-family: $logo-font;
+        font-size: $logo-size;
+        
+    }
+    .nav-link, i{
+        color: $black;
+        font-weight: $bold;
+        font-family: $font;
+        font-size: $nav-size;
+        transform: scale(0.8);
+        transition-duration: 0.5s;
+    }
+    .nav-link, i:hover{
+        transform: scale(1.1);
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image:
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='6' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    }
+    .navbar-light .navbar-toggler {
+    border: none ;
+    }
+}

@@ -1,0 +1,273 @@
+@import "_general.scss";
+@import "_nav.scss";
+
+
+
+/*Block Header*/ 
+
+#header{
+    margin: 0;
+    color: $text;
+    height: 100vh;
+    .container-fluid{
+        padding: 0;
+    }
+    .row{
+        margin: 0;
+        padding: 0;
+        img{
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            object-fit: fill;
+        }
+        .card{
+            border: none;
+            margin: 30% 0;
+            h1, p{
+                padding: 0 50px;
+                text-align: left;
+            }
+            .title{
+                font-size: $t-size;
+                font-weight: $bold;
+            }
+            .subtitle{
+                font-size: $sub-title;
+            }
+            .text-body{
+                font-size: $paragrapf;
+                font-weight: $light;
+            }
+            .button{
+                margin: 0 50px;
+            }
+            
+        }
+    }
+}
+#story{
+    max-width: 100vw;
+    height: 400px;
+    img{
+        height: 400px;
+    }
+    .card{
+        border: none;
+        margin: 0;
+        padding-top: 50px;
+        h1, p{
+            padding:0 50px;
+            text-align: left;
+        }
+        .title{
+            font-size: $t-size;
+            font-weight: $bold;
+        }
+        .subtitle{
+            font-size: $sub-title;
+        }
+        .text-body{
+            font-size: $paragrapf;
+            font-weight: $light;
+        }
+        .button{
+            margin: 0 70px;
+        }
+    }
+}
+#story-1{
+    height: 400px;
+    img{
+        height: 400px;
+    }
+    .card{
+        border: none;
+        margin: 0;
+        padding-top: 50px;
+        h1, p{
+            padding:0 50px;
+            text-align: left;
+        }
+        .title{
+            font-size: $t-size;
+            font-weight: $bold;
+        }
+        .subtitle{
+            font-size: $sub-title;
+        }
+        .text-body{
+            font-size: $paragrapf;
+            font-weight: $light;
+        }
+        .button{
+            margin: 0 70px;
+        }
+    }
+}
+
+
+#carousel{
+    margin: 0;
+    padding: 0;
+    .img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25vw;
+        height: 35vh;
+    }
+    .img-1{
+        background-image: url(images/Rowena-by-Garin-Wood.jpeg);
+    }
+    .img-2{
+        background-image: url(images/6-1.jpg);
+    }
+    .img-3{
+        background-image: url(images/3.jpg);
+    }
+    .img-4{
+        background-image: url(images/pexels-photo-2422968.jpeg);
+    }
+    .img-5{
+        background-image: url(images/maxresdefault.jpg);
+    }
+    .img-6{
+        background-image: url(images/pexels-photo-531321.jpeg);
+    }
+    .img-7{
+        background-image: url(images/pexels-photo-1230665.jpeg);
+    }
+    .img-8{
+        background-image: url(images/startrail-3725369_1280.jpg);
+    }
+
+    .button{
+        border: 1px solid white ;
+        background: transparent;
+        color: white ;
+        width: 80px;
+        height: 40px;
+        margin: 20px 40%;
+    }
+    .button:hover{
+        background-color: $grey;
+        color: $text;
+    }
+    .title{
+        width: 100%;
+        height: 100%;
+        opacity: 0 ;
+        transition-duration: 1s ;
+    }
+    .title:hover{
+        opacity: 1 ;
+        transition-duration: 1s ;
+        background-color: rgba(37, 37, 37, 0.3)
+    }
+    .carousel-control-prev{
+        position: absolute;
+        left: 0px;
+        top: 60px;
+        max-width: 60px;
+        max-height: 300px;
+    }
+    .carousel-control-next{
+        position:  absolute;
+        float: right;
+        top: 60px;
+        right: 0px;
+        max-width: 60px;
+        max-height: 300px;
+    }
+
+}
+
+
+
+
+#features{
+    margin: 0;
+    padding: 0;
+    .card{
+        @include card;
+        border: none;
+        margin: 0;
+        padding: 90px 0;
+    }
+    i{
+        font-size: $t-size;
+        color: $black;
+    }
+    h5{
+        padding-top: 30px;
+        font-weight: $bold;
+    }
+    p{
+        padding-top: 30px;
+    }
+    .one{
+        border-bottom: 3px solid $grey;
+        border-right: 3px solid $grey;
+    }
+    .two{
+        border-bottom: 3px solid $grey;
+        border-right: 3px solid $grey;
+    }
+    .three{
+        border-bottom: 3px solid $grey;
+    }
+    .four{
+        border-right: 3px solid $grey;
+    }
+    .five{
+        border-right: 3px solid $grey;
+    }
+}
+
+#form{
+    .container{
+        text-align: left;
+        max-width: 900px;
+        font-weight: 800;
+        .contact-form{
+            justify-content: space-around;
+        }
+        .submit-btn{
+            border: 2px solid $grey;
+            border-radius: 5px;
+            background-color: $white !important;
+            color: $black !important;
+            text-align: center;
+            width: 8rem;
+            height: 3rem;
+            transition: 0.3s;
+        }
+        .submit-btn:hover{
+            background-color: $grey !important;
+            color: $line !important;
+        }
+
+    }
+}
+
+footer{
+    .social:hover {
+        transform: scale(1.1);
+
+    }
+    .social {
+        transform: scale(0.8);
+        transition-duration: 0.5s;
+        color: $black;
+        font-weight: $bold;
+        font-size: $logo-size;
+        border: 2px solid $black;
+        border-radius: 100%;
+        padding: 20px;
+    }
+}
+
+
+
+@import "_media.scss";
